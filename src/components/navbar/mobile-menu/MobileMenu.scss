@@ -1,0 +1,47 @@
+.mobile-menu {
+  width: 100%;
+  background-color: $color-white;
+  height: 100%;
+
+  overflow-y: scroll;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 640px;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    &__item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 18px;
+      padding: 16px 0;
+      user-select: none;
+      opacity: 0.8;
+      &:hover {
+        opacity: 1;
+      }
+      &--selected {
+        font-weight: 700;
+        opacity: 1;
+      }
+
+      &__cartCount {
+        font-size: 15px;
+        background-color: $color-gray;
+        padding: 10px;
+        border-radius: 50%;
+        font-weight: 700;
+      }
+    }
+    &__btn {
+      width: max-content;
+      font-size: 18px;
+    }
+  }
+}

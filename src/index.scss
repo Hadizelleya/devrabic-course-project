@@ -1,0 +1,42 @@
+$color-primary: #3b4142;
+$color-secondary: #f9f8f9;
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #999;
+$color-red: red;
+@import "./components/navbar/Navbar.scss";
+@import "./components/navbar/mobile-menu/MobileMenu.scss";
+@import "./components/product-card/ProductCard.scss";
+@import "./pages//products/Products.scss";
+@import "./pages/auth/Authentication.scss";
+@import "./pages/cart/Cart.scss";
+@import "./components/sign-in/SignIn.scss";
+@import "./components/cartCard/CartCard.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $color-secondary;
+}
+a {
+  text-decoration: none;
+  color: $color-black;
+}
+button {
+  padding: 10px 20px;
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $color-black;
+  }
+}
